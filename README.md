@@ -79,7 +79,45 @@ This is a sample file used for testing FastAPI file upload.
 
 Use this when testing the `/upload/` endpoint.
 
-## 💻 Git Commands to Initialize and Push
+---
+
+## 🔀 Git Branch Workflow
+
+This project uses a **two-branch** workflow:  
+- `main` — the default branch for production-ready code  
+- `feature` — used for making changes or adding features
+
+### ✅ What was done:
+
+1. Created a new `feature` branch:
+    ```bash
+    git checkout -b feature
+    ```
+
+2. Made changes to the `README.md` file in the `feature` branch.
+
+3. Committed and pushed the feature branch:
+    ```bash
+    git add .
+    git commit -m "Updated README with usage instructions"
+    git push origin feature
+    ```
+
+4. Opened a Pull Request (PR) on GitHub to merge `feature` → `main`.
+
+5. Merged the pull request after review.
+
+6. Switched back to `main`:
+    ```bash
+    git checkout main
+    git pull origin main
+    ```
+
+This branching strategy helps keep `main` stable while allowing isolated development in `feature` branches.
+
+---
+
+## 💻 Git Commands to Initialize and Push (First Time)
 
 ```bash
 git init
@@ -89,5 +127,3 @@ git remote add origin https://github.com/your-username/your-repo-name.git
 git branch -M main
 git push -u origin main
 ```
-
-Happy coding! 🚀
