@@ -1,38 +1,38 @@
 # FastAPI File Upload Project
 
-This is a simple FastAPI project demonstrating file uploads using FastAPI's `UploadFile`.
+This is a simple FastAPI project that demonstrates how to upload files using FastAPI's `UploadFile`.
 
 ## 🛠 Requirements
 
-- Python 3.8+
-- FastAPI
-- Uvicorn
+- Python 3.8 or higher  
+- FastAPI  
+- Uvicorn  
 
 ## 📦 Installation
 
-1. Clone this repository or navigate to your project folder.
+1. Clone this repo or open your project folder.  
 2. Create and activate a virtual environment:
 
-```bash
-python -m venv venv
-.\venv\Scripts\activate  # For Windows
-```
+    ```bash
+    python -m venv venv
+    .\venv\Scripts\activate  # On Windows
+    ```
 
-3. Install the required packages:
+3. Install the dependencies:
 
-```bash
-pip install fastapi uvicorn python-multipart
-```
+    ```bash
+    pip install fastapi uvicorn python-multipart
+    ```
 
 ## 🚀 Running the App
 
-Start the FastAPI server with:
+Start the server with:
 
 ```bash
 uvicorn main:app --reload
 ```
 
-This will start the server at:
+It will be available at:
 
 ```
 http://127.0.0.1:8000
@@ -40,7 +40,7 @@ http://127.0.0.1:8000
 
 ## 📄 Swagger UI
 
-You can test the API using Swagger UI here:
+You can test the API through the interactive Swagger UI:
 
 ```
 http://127.0.0.1:8000/docs
@@ -48,15 +48,16 @@ http://127.0.0.1:8000/docs
 
 ### ➕ Upload File Endpoint
 
-- Endpoint: `POST /upload/`
-- Click "Try it out"
-- Choose a file (e.g., `test_upload.txt`)
-- Click "Execute"
-- You’ll see a response with file name and content type
+- **Method:** `POST`  
+- **Endpoint:** `/upload/`  
+- Click **Try it out**  
+- Choose a file (e.g., `test_upload.txt`)  
+- Click **Execute**  
+- You’ll receive a response showing the file name and content type  
 
-## 📁 .gitignore
+## 📁 .gitignore Setup
 
-Create a `.gitignore` file and add the following:
+Create a `.gitignore` file and add:
 
 ```
 venv/
@@ -66,17 +67,17 @@ __pycache__/
 *.log
 ```
 
-This will prevent unnecessary or sensitive files from being committed to Git.
+This helps keep your repo clean by ignoring unnecessary or sensitive files.
 
 ## 🧪 Test File
 
-Create a simple test file called `test_upload.txt`:
+Make a simple test file named `test_upload.txt`:
 
-```text
+```
 This is a sample file used for testing FastAPI file upload.
 ```
 
-Use this file to test the `/upload/` endpoint via Swagger UI.
+Use this when testing the `/upload/` endpoint.
 
 ## 💻 Git Commands to Initialize and Push
 
