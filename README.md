@@ -99,7 +99,7 @@ This project uses a **two-branch** workflow:
 3. Committed and pushed the feature branch:
     ```bash
     git add .
-    git commit -m "Updated README with usage instructions"
+    git commit -m "Added README.md"
     git push origin feature
     ```
 
